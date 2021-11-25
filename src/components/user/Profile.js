@@ -10,29 +10,29 @@ export default function Profile({
   likes,
 }) {
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt={username} class="avatar" width="300" />
-        <p class="name">{username}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
+    <section className="profile">
+      <div className="description">
+        <img src={avatar} alt={username} className="avatar" width="300" />
+        <p className="name">{username}</p>
+        <p className="tag">{tag}</p>
+        <p className="location">{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul className="stats">
         <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{followers}</span>
+          <span className="label">Followers</span>
+          <span className="quantity">{followers}</span>
         </li>
         <li>
-          <span class="label">Views</span>
-          <span class="quantity">{views}</span>
+          <span className="label">Views</span>
+          <span className="quantity">{views}</span>
         </li>
         <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{likes}</span>
+          <span className="label">Likes</span>
+          <span className="quantity">{likes}</span>
         </li>
       </ul>
-    </div>
+    </section>
   );
 }
 
