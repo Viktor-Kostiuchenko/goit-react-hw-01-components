@@ -1,0 +1,90 @@
+.user {
+  color: #ddd;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.profile {
+  position: relative;
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  font-family: sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile:hover .avatar {
+  transform: scale(1.05);
+}
+
+.profile:hover .description {
+  transform: translateY(10%) scale(1.05);
+  pointer-events: visible;
+  opacity: 1;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+
+  background-color: rgba(117, 190, 218, 0.7);
+  opacity: 0;
+  text-align: center;
+  pointer-events: none;
+  transform: translateY(200%) scale(1);
+  transition: transform 250ms linear, opacity 250ms linear;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.tag {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.location {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.avatar {
+  display: block;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+
+  background-color: rgba(117, 190, 218, 0.9);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+}
+
+.item:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+
+.quantity {
+  font-size: 12px;
+}

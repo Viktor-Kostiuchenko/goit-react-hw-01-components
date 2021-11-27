@@ -1,0 +1,47 @@
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 120px;
+  transform: scale(1);
+  transition: transform 250ms linear;
+  cursor: pointer;
+}
+.item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.avatar {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  background-color: rgba(117, 190, 218, 0.8);
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  border-radius: 0 0 10px 10px;
+}

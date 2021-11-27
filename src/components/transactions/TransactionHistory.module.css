@@ -1,0 +1,16 @@
+.thead {
+  background-color: rgba(117, 190, 218, 0.9);
+  color: white;
+}
+
+.title {
+  color: #ddd;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.th {
+  width: 100px;
+}

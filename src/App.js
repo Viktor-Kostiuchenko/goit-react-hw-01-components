@@ -1,3 +1,4 @@
+import Section from './components/section/Section';
 import Profile from './components/user/Profile';
 import StatisticsList from './components/statistics/StatisticsList';
 import FriendsList from './components/friends/FriendsList';
@@ -18,18 +19,20 @@ export default function App() {
 
   return (
     <>
-      <Profile
-        username={username}
-        tag={tag}
-        location={location}
-        avatar={avatar}
-        followers={followers}
-        views={views}
-        likes={likes}
-      />
-      <StatisticsList title="Upload stats" stats={statistics} />
-      <FriendsList friends={friends} />
-      <TransactionHistory items={transactions} />
+      <Section>
+        <Profile
+          username={username}
+          tag={tag}
+          location={location}
+          avatar={avatar}
+          followers={followers}
+          views={views}
+          likes={likes}
+        />
+        <TransactionHistory items={transactions} />
+        <FriendsList friends={friends} />
+        <StatisticsList title="Upload stats" stats={statistics} />
+      </Section>
     </>
   );
 }

@@ -112,11 +112,5 @@
     "type": "invoice",
     "amount": "725.03",
     "currency": "UYU UYI"
-  },
-  {
-    "id": "b39bfa7a-0166-4c47-94d6-87d20590f746",
-    "type": "payment",
-    "amount": "405.45",
-    "currency": "MDL"
   }
 ]
