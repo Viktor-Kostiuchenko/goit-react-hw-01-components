@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import s from './FriendsItem.module.css';
+import s from './FriendItem.module.css';
 
-export default function FriendsItem({ id, avatar, name, isOnline }) {
+export default function FriendItem({ id, avatar, name, isOnline }) {
   return (
     <>
       <li key={id} className={s.item}>
@@ -18,7 +18,7 @@ export default function FriendsItem({ id, avatar, name, isOnline }) {
   );
 }
 
-FriendsItem.propTypes = {
+FriendItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
   name: PropTypes.string.isRequired,
